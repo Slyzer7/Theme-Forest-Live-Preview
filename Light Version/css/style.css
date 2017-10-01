@@ -4,27 +4,27 @@ Author: SlyThemes
 
 Index Of CSS:
 
-  - Global
-    :: 1. Navbar
+	- Global
+		:: 1. Navbar
     :: 2. Page-Loader
-    :: 3. Header
+		:: 3. Header
        -3.1 Component/Particles
        -3.2 Slider
-    :: 4. Miscellaneous
-    :: 5. Attributes
-    :: 6. Team
+		:: 4. Miscellaneous
+		:: 5. Attributes
+		:: 6. Team
     :: 7. Numbers-container
     :: 8. Progress Cirlce
     :: 9. Price
     :: 10. Reviews
     :: 11. Fade-In Animation
     :: 12. Services
-    :: 13. Works
-    :: 14. News
-    :: 15. Contact
-    :: 16. Map
-    :: 17. Footer
-    
+		:: 13. Works
+		:: 14. News
+		:: 15. Contact
+		:: 16. Map
+		:: 17. Footer
+		
 */
 
 @import url(main.css);
@@ -63,14 +63,18 @@ h6{
   font-weight: 100;
 }
 .section_head {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+.paragraph-margin{
+  margin-left: 12%;
+  margin-right: 12%;
 }
 .section_head-sub{
   margin-top: 30px;
   margin-bottom: 30px;
 }
 .section_head_beg{
-  margin-top: 80px;
+  margin-top: 50px;
   margin-bottom: 0px;
 }
 .section_head_beg h6{
@@ -85,6 +89,12 @@ h6{
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
 }
+.section_head_beg h2{
+  font-size: 42px;
+  margin-bottom: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
 .section_head h6 {
   font-size: 12px;
   letter-spacing: 4px;
@@ -93,7 +103,7 @@ h6{
   margin-bottom: 15px;
 }
 .section_head h4 {
-  margin-bottom: 55px;
+  margin-bottom: 40px;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
 }
@@ -336,7 +346,7 @@ h6{
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.1);
 }
 .header .subtitle {
   color: #fff;
@@ -360,7 +370,7 @@ h6{
   width: 50px;
   height: 50px;
   border-radius: 30px;
-  border: 1.8px solid #DCDCDC;
+  border: 1.8px solid #4682B4;
   cursor: pointer;
   z-index: 9;
 }
@@ -408,7 +418,7 @@ h6{
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                     3.1 - Component
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-.large-header {
+.header {
   position: relative;
   width: 100%;
   background: #111;
@@ -420,9 +430,12 @@ h6{
 
 /*This is where you place your header background images*/
 /*Images should have a darker color palette*/
-.demo-1 .large-header {
+.header.demo1 {
   /*url MUST be online url, Not within the img folder*/
   background-image: url("../img/landscape.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -504,7 +517,7 @@ h6{
   background-color: #DCDCDC;
 }
 .hr-line-five{
-  height:2px;
+  height:1.8px;
   border:none;
   margin-left: 42%;
   margin-right: 42%;
@@ -528,8 +541,8 @@ h6{
 .text-center-f-p{
   padding-top: 15px;
   text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 11%;
+  margin-right: 11%;
 }
 .check-style{
   padding-right: 13px;
@@ -563,7 +576,7 @@ h6{
   margin-top: 30px;
 }
 .section-progress {
-  padding: 1em;
+  padding: 0.1em;
   text-align: center;
 }
 .Base_Attributes-Sub{
@@ -731,7 +744,7 @@ h6{
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .numbers-container {
   /*url MUST be online url, Not within the img folder*/
-  background-image: url("../img/moon2.jpg");
+  background-image: url("../img/new-zealand-light.jpg");
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -937,9 +950,8 @@ h6{
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .Reviews {
   /*url MUST be online url, Not within the img folder*/
-  background-image: url("../img/moon3.jpg");
+  background-image: url("../img/sea-two-light.jpg");
   background-size: cover;
-  background-position: center;
   background-attachment: fixed;
   position: relative;
 }
@@ -947,11 +959,11 @@ h6{
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.4);
-  z-index: 1;
+  z-index: 0;
 }
 .Reviews .container {
   position: relative;
@@ -1001,7 +1013,7 @@ h6{
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                    12 - Fade-In Animation
+                    11 - Fade-In Animation
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .hide-me {
@@ -1010,22 +1022,24 @@ h6{
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                    13 - Services
+                    12 - Services
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .services {
   padding-bottom: 0;
 }
 .services .tab-box-item li {
   display: inline-block;
-  padding: 15px 70px 5px;
+  padding: 25px 55px 5px;
   margin-bottom: 80px;
-  border: 2px solid #D1D1D1;
+  border: 2px solid rgba(77, 70, 70, 0.4);
   border-radius: 15px;
   cursor: pointer;
   color: #888;
   position: relative;
   background-color: #f1f1f1;
   transition: all 2s;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 .services .tab-box-item li:hover{
   -webkit-transform: scale(0.85);
@@ -1034,7 +1048,7 @@ h6{
 }
 .services .tab-box-item li:before {
   content: "";
-  width: 1px;
+  width: 5px;
   height: 90%;
   position: absolute;
   top: 5%;
@@ -1096,7 +1110,7 @@ h6{
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                    14 - Works
+                    13 - Works
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .Works {
   overflow: hidden;
@@ -1145,7 +1159,7 @@ h6{
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                    15 - News
+                    14 - News
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .News {
   background: #f5f5f5;
@@ -1185,7 +1199,7 @@ h6{
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                    16 - Contact
+                    15 - Contact
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .contact .info {
   margin-bottom: 80px;
@@ -1230,7 +1244,7 @@ h6{
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                    17 - Map
+                    16 - Map
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .map {
   margin: 0 auto;
@@ -1272,7 +1286,7 @@ h6{
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                    18 - Footer
+                    17 - Footer
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 footer {
   background: #111;
