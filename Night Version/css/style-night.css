@@ -4,8 +4,8 @@ Author: SlyThemes
 
 Index Of CSS:
 
-  - Global
-    :: 1. Navbar
+	- Global
+		:: 1. Navbar
     :: 2. Page-Loader
     :: 3. Header
        -3.1 Component/Particles
@@ -17,15 +17,14 @@ Index Of CSS:
     :: 8. Progress Cirlce
     :: 9. Price
     :: 10. Reviews
-    :: 11. Video Emblem
-    :: 12. Fade-In Animation
-    :: 13. Services
-    :: 14. Works
-    :: 15. News
-    :: 16. Contact
-    :: 17. Map
-    :: 18. Footer
-    
+    :: 11. Fade-In Animation
+    :: 12. Services
+    :: 13. Works
+    :: 14. News
+    :: 15. Contact
+    :: 16. Map
+    :: 17. Footer
+		
 */
 
 @import url(main.css);
@@ -68,15 +67,19 @@ h6{
   color: #fff;
 }
 .section_head {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+.paragraph-margin{
+  margin-left: 12%;
+  margin-right: 12%;
 }
 .section_head-sub{
   margin-top: 30px;
   margin-bottom: 30px;
 }
 .section_head_beg{
-  margin-top: 80px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 0px;
 }
 .section_head_beg h6{
   font-size: 12px;
@@ -98,7 +101,7 @@ h6{
   margin-bottom: 15px;
 }
 .section_head h4 {
-  margin-bottom: 55px;
+  margin-bottom: 40px;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
 }
@@ -342,7 +345,7 @@ h6{
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.1);
 }
 .header .subtitle {
   color: #DCDCDC;
@@ -366,7 +369,7 @@ h6{
   width: 50px;
   height: 50px;
   border-radius: 30px;
-  border: 1.8px solid #DCDCDC;
+  border: 1.8px solid #4682B4;
   cursor: pointer;
   z-index: 9;
 }
@@ -414,7 +417,7 @@ h6{
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                     3.1 - Component
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-.large-header {
+.header {
   position: relative;
   width: 100%;
   background: #111;
@@ -426,9 +429,12 @@ h6{
 
 /*This is where you place your header background images*/
 /*Images should have a darker color palette*/
-.demo-1 .large-header {
+.header.demo1 {
   /*url MUST be online url, Not within the img folder*/
   background-image: url("../img/hamburg.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -485,27 +491,26 @@ h6{
   height:2px;
   border:none;
   color: #DCDCDC;
-  background-color: #222;
+  background-color: #444;
 }
 .hr-line-two{
   height:2px;
   border:none;
-  color: #f5f5f5;
-  background-color: #222;
+  background-color: #444;
 }
 .hr-line-three{
   height:3px;
   border:none;
   margin-left: 7%;
   margin-right: 7%;
-  background-color: #222;
+  background-color: #444;
 }
 .hr-line-four{
   height:0px;
   border:none;
   margin-left: 7%;
   margin-right: 7%;
-  background-color: #222;
+  background-color: #444;
 }
 .hr-line-five{
   height:2px;
@@ -532,8 +537,8 @@ h6{
 .text-center-f-p{
   padding-top: 15px;
   text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 11%;
+  margin-right: 11%;
 }
 .check-style{
   padding-right: 13px;
@@ -567,7 +572,7 @@ h6{
   margin-top: 30px;
 }
 .section-progress {
-  padding: 1em;
+  padding: 0.1em;
   text-align: center;
 }
 .Base_Attributes-Sub{
@@ -939,7 +944,6 @@ h6{
   /*url MUST be online url, Not within the img folder*/
   background-image: url("../img/moon3.jpg");
   background-size: cover;
-  background-position: center;
   background-attachment: fixed;
   position: relative;
 }
@@ -947,11 +951,11 @@ h6{
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.4);
-  z-index: 1;
+  z-index: 0;
 }
 .Reviews .container {
   position: relative;
@@ -1001,73 +1005,7 @@ h6{
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                    11 - Video-emblem
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-  #emblem {
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
-    padding: 8em 4em 6em 4em;
-    min-height: 80vh;
-    border-top: 0;
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-  }
-
-  .vid-color{
-    color: #fff;
-  }
-
-    #emblem .inner {
-      text-align: center;
-      position: relative;
-      z-index: 2;
-    }
-
-    #emblem h2 {
-      color: #fff;
-      font-size: 2.5em;
-      font-weight: 200;
-      font-family: 'Source Sans Pro';
-      margin: 0;
-    }
-
-    #emblem p {
-      color: rgba(255, 255, 255, 0.85);
-      font-size: 1.3em;
-      font-weight: 200;
-    }
-
-    #emblem video {
-      -moz-transform: translateX(50%) translateY(50%);
-      -webkit-transform: translateX(50%) translateY(50%);
-      -ms-transform: translateX(50%) translateY(50%);
-      transform: translateX(50%) translateY(50%);
-      position: absolute;
-      bottom: 50%;
-      right: 50%;
-      width: 80%;
-      height: auto;
-      min-width: 85%;
-      min-height: 100%;
-      overflow: hidden;
-    }
-
-
-
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                    12 - Fade-In Animation
+                    11 - Fade-In Animation
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .hide-me {
@@ -1076,14 +1014,14 @@ h6{
     
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                    13 - Services
+                    12 - Services
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .services {
   padding-bottom: 0;
 }
 .services .tab-box-item li {
   display: inline-block;
-  padding: 15px 70px 5px;
+  padding: 25px 55px 5px;
   margin-bottom: 80px;
   border: 2px solid #5C5C5C;
   border-radius: 15px;
@@ -1092,6 +1030,8 @@ h6{
   position: relative;
   background-color: #A1A1A1;
   transition: all 2s;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 .services .tab-box-item li:hover{
   -webkit-transform: scale(0.85);
@@ -1100,7 +1040,7 @@ h6{
 }
 .services .tab-box-item li:before {
   content: "";
-  width: 1px;
+  width: 5px;
   height: 90%;
   position: absolute;
   top: 5%;
@@ -1162,7 +1102,7 @@ h6{
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                    14 - Works
+                    13 - Works
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .Works {
   overflow: hidden;
@@ -1211,14 +1151,14 @@ h6{
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                    15 - News
+                    14 - News
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .News {
   background: #0F0F0F;
 }
 .News .post-content {
   padding: 30px 20px 15px;
-  background: #171717;
+  background: #333;
   border-radius: 25px;
 }
 .News .post-content h6 {
@@ -1227,7 +1167,7 @@ h6{
   font-weight: 300;
 }
 .News .post-content p {
-  color: #999;
+  color: #fff;
 }
 .News .post-content a span {
   color: #4682B4;
@@ -1251,7 +1191,7 @@ h6{
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                    16 - Contact
+                    15 - Contact
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .contact .info {
   margin-bottom: 80px;
@@ -1296,7 +1236,7 @@ h6{
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                    17 - Map
+                    16 - Map
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .map {
   margin: 0 auto;
@@ -1335,7 +1275,7 @@ h6{
   color: #fff;
 }
 .open:after{
-  color: #fff;
+  color: #111;
 }
 .map-dimensions{
   height: 100%;
@@ -1344,7 +1284,7 @@ h6{
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                    18 - Footer
+                    17 - Footer
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 footer {
   background: #111;

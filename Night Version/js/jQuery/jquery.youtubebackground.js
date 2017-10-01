@@ -150,7 +150,7 @@ if (typeof Object.create !== "function") {
         self.resize(self);
       });
 
-      loadAPI(self.onYouTubeIframeAPIReady.on(self));
+      loadAPI(self.onYouTubeIframeAPIReady.bind(self));
 
       self.resize(self);
 
