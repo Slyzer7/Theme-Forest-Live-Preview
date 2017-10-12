@@ -6,8 +6,10 @@
  * https://github.com/1000hz/bootstrap-validator
  */
 
+"use strict";
+/*jslint browser:true */
+
 +function ($) {
-  'use strict';
 
   // VALIDATOR CLASS DEFINITION
   // ==========================
