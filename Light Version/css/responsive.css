@@ -65,10 +65,10 @@ Author: SlyThemes
     transition: all .5s;
   }
 }
-@media (max-width: 1280px){
+@media (min-width: 480px){
   .width_resp{
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 70px;
+    margin-left: 70px;
   }
 }
 @media (max-width: 767px){
