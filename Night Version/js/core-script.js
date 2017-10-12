@@ -21,6 +21,9 @@ Index Of JS:
         
 */
 
+"use strict";
+/*jslint browser:true */
+
 /* >>>>>>>>> Page-Loader >>>>>>>>>>*/
 $(window).on("load",function (){
 

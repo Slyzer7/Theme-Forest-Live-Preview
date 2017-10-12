@@ -7,8 +7,8 @@ Author: SlyThemes
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (max-width: 767px){
   .Our_Team_Sec{
-    margin-left: 5%;
-    width: 90%;
+    margin-left: 6.9%;
+    width: 86.1%;
   }
 }
 @media (max-width: 767px){
@@ -49,21 +49,27 @@ Author: SlyThemes
 }
 @media (max-width: 480px){
   .social-icon-sub{
-      width: 100%;
-      height: 60px;
-      color: #fff;
-      background: rgb(0 ,0, 0, 0);
-      transition: all .5s;
-    }
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    background: rgb(0 ,0, 0, 0);
+    transition: all .5s;
+  }
 }
 @media (max-width: 767px){
-   .social-icon-sub{
-      width: 100%;
-      height: 60px;
-      color: #fff;
-      background: rgb(0 ,0, 0, 0);
-      transition: all .5s;
-    }
+  .social-icon-sub{
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    background: rgb(0 ,0, 0, 0);
+    transition: all .5s;
+  }
+}
+@media (max-width: 1280px){
+  .width_resp{
+    margin-right: 100px;
+    margin-left: 100px;
+  }
 }
 @media (max-width: 767px){
   .services .tab-box-item li {
@@ -71,7 +77,7 @@ Author: SlyThemes
     padding: 15px 30px 5px;
     margin-bottom: 45px;
     border: 1.8px solid rgba(77, 70, 70, 0.4);
-    border-radius: 15px;
+    border-radius: 20px;
     cursor: pointer;
     color: #5C5C5C;
     position: relative;
@@ -120,23 +126,23 @@ Author: SlyThemes
   }
 }
 @media (min-width: 1280px){
-   .social-icon-sub{
-      width: 50px;
-      margin-bottom: 5px;
-      line-height: 40px;
-      color: #fff;
-      background: #151515;
-      -webkit-transition: all .5s;
-      transition: all .5s;
-      border-radius: 50px;
-      padding: 10px;
-      float: right;
-    }
+  .social-icon-sub{
+    width: 50px;
+    margin-bottom: 5px;
+    line-height: 40px;
+    color: #fff;
+    background: #151515;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    border-radius: 50px;
+    padding: 10px;
+    float: right;
+  }
 }
 @media (max-width: 980px){
   .quote-resp{
-      display: none;
-    }
+    display: none;
+  }
 
 }
 @media (max-width: 1280px){
@@ -209,6 +215,14 @@ Author: SlyThemes
     background-position:center;
     width: 100%;
   }
+  .header.demo2 {
+    /*url MUST be online url, Not within the img folder*/
+    background-image: url("../img/fairyland-canyon-night.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    background-position:center;
+  }
+
   .numbers-container {
     /*url MUST be online url, Not within the img folder*/
     background-image: url("../img/mountain-night.jpg");
@@ -313,7 +327,7 @@ Author: SlyThemes
     display: block;
   }
   footer .sub-footer {
-  display: none;
+    display: none;
   }
   .footer-center{
     text-align: center;
@@ -332,7 +346,7 @@ Author: SlyThemes
     display: block;
   }
   footer .sub-footer {
-  display: none;
+    display: none;
   }
   .footer-center{
     text-align: center;

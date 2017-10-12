@@ -345,7 +345,7 @@ h6{
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.2);
 }
 .header .subtitle {
   color: #DCDCDC;
@@ -437,6 +437,14 @@ h6{
   background-position:center;
 }
 
+.header.demo2 {
+  /*url MUST be online url, Not within the img folder*/
+  background-image: url("../img/hamburg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                     3.2 - Slider
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -475,10 +483,15 @@ h6{
   padding: 45px 0;
 }
 .section_pd_beg{
-  padding: 20px;
+  padding: 25px;
 }
-.vid-section{
-  padding-bottom: 20px;
+.section_divider{
+  padding-top: 40px;
+  padding-bottom: 9px;
+}
+.pd_extra{
+  padding-top: 5.8px;
+  padding-bottom: 5.8px;
 }
 .text-move{
   color: #fff;
@@ -570,6 +583,12 @@ h6{
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .new-padding{
   margin-top: 30px;
+}
+.about {
+  padding-bottom: 0;
+}
+.about .item {
+  margin-bottom:50px;
 }
 .section-progress {
   padding: 0.1em;
@@ -749,7 +768,7 @@ h6{
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 .numbers-container .container {
@@ -954,7 +973,7 @@ h6{
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 .Reviews .container {
@@ -1024,7 +1043,7 @@ h6{
   padding: 25px 55px 5px;
   margin-bottom: 80px;
   border: 2px solid #5C5C5C;
-  border-radius: 15px;
+  border-radius: 20px;
   cursor: pointer;
   color: #5C5C5C;
   position: relative;
@@ -1109,7 +1128,7 @@ h6{
 }
 .Works .filtering span {
   margin: 0px 10px;
-  padding: 5px 10px;
+  padding: 0px 15px;
   font-size: 16px;
   color: #777;
   cursor: pointer;
@@ -1313,10 +1332,12 @@ footer .main-footer .social-icon span {
   -webkit-transition: all .5s;
   transition: all .5s;
   border-radius: 30px;
+  border: 0.3px solid #fff;
 }
 footer .main-footer .social-icon span:hover {
   background: #4682B4;
   color: #DCDCDC;
+  border: 0.3px solid #444;
 }
 footer .sub-footer {
   text-align: center;
@@ -1344,13 +1365,19 @@ footer .sub-footer {
   width: 50px;
   margin-bottom: 5px;
   line-height: 40px;
-  color: #fff;
-  background: #151515;
   -webkit-transition: all .5s;
   transition: all .5s;
   border-radius: 50px;
   padding: 10px;
   float: right;
+  background: rgb(0 ,0, 0, 0);
+}
+.social-icon-sub i{
+  color: #eee;
+}
+.social-icon-sub i:hover{
+  color: #4682B4;
+  -webkit-transition: all .5s;
 }
 .main-logo{
   padding-top: 10px;
