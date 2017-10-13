@@ -23,7 +23,7 @@ Author: SlyThemes
     width: 90%;
   }
 }
-@media (max-width: 1080px){
+@media (max-width: 900px){
   .resp-tablet{
     margin-left: 11%;
     margin-right: 11%;
