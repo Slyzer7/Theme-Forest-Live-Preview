@@ -371,6 +371,7 @@ Author: SlyThemes
   .hr-line-two{
     height:2px;
     border:none;
+    margin-top: 0px;
     margin-left: 2%;
     margin-right: 2%;
     background-color: #444;
