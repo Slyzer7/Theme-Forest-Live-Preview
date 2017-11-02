@@ -482,12 +482,15 @@ h6{
 .section_pd {
   padding: 45px 0;
 }
+.btn-pd{
+  padding-top: 6.6px;
+}
 .section_pd_beg{
   padding: 25px;
 }
 .section_divider{
   padding-top: 40px;
-  padding-bottom: 9px;
+  padding-bottom: 60px;
 }
 .pd_extra{
   padding-top: 5.8px;
@@ -586,7 +589,7 @@ h6{
   margin-top: 30px;
 }
 .about {
-  padding-bottom: 0;
+  padding-bottom: 18px;
 }
 .about .item {
   margin-bottom:50px;
@@ -855,6 +858,9 @@ h6{
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                     9 - Price
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.price{
+  padding-bottom: 60px;
+}
 .price .prc-item {
   border: 1px solid #eee;
   border-radius: 20px;
@@ -1040,24 +1046,19 @@ h6{
 .services {
   padding-bottom: 0;
 }
+.Service-Padding{
+  margin-left: 30px;
+}
 .services .tab-box-item li {
   display: inline-block;
-  padding: 25px 55px 5px;
-  margin-bottom: 80px;
-  border: 2px solid #5C5C5C;
-  border-radius: 20px;
+  padding: 1px 55px 5px;
+  margin-bottom: 45px;
   cursor: pointer;
   color: #5C5C5C;
   position: relative;
-  background-color: #A1A1A1;
-  transition: all 2s;
+  transition: all 1s;
   margin-left: 4px;
   margin-right: 4px;
-}
-.services .tab-box-item li:hover{
-  -webkit-transform: scale(0.85);
-          transform: scale(0.85);
-  transition: all 2s;
 }
 .services .tab-box-item li:before {
   content: "";
@@ -1068,16 +1069,6 @@ h6{
   right: 0;
 }
 .services .tab-box-item li:last-child:before {
-  display: none;
-}
-.services .tab-box-item li:after {
-  content: "";
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid #4682B4;
-  position: absolute;
-  bottom: -50px;
-  left: calc(50% - 20px);
   display: none;
 }
 .services .tab-box-item li span {
@@ -1107,7 +1098,7 @@ h6{
   color: #f4f4f4;
 }
 .services .services_content .item h5 {
-  color: #222;
+  color: #4682B4;
   margin: 0;
   font-family: 'Raleway', sans-serif;
   line-height: 1.5;
@@ -1120,6 +1111,9 @@ h6{
 .icon-color{
   color: #4682B4;
 }
+.img-style2{
+  box-shadow: 5px 5px 3px;
+}
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1127,6 +1121,7 @@ h6{
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .Works {
   overflow: hidden;
+  padding-bottom: 60px;
 }
 .Works .filtering span {
   margin: 0px 10px;
@@ -1177,6 +1172,9 @@ h6{
 .News {
   background: #0F0F0F;
 }
+.post{
+  padding-top: 0px;
+}
 .News .post-content {
   padding: 30px 20px 15px;
   background: #333;
@@ -1214,6 +1212,10 @@ h6{
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                     15 - Contact
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.contact{
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
 .contact .info {
   margin-bottom: 80px;
 }

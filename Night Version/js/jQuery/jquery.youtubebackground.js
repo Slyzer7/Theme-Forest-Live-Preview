@@ -9,9 +9,6 @@
  *
  */
 
- "use strict";
-/*jslint browser:true */
-
 // Chain of Responsibility pattern. Creates base class that can be overridden.
 if (typeof Object.create !== "function") {
   Object.create = function(obj) {
@@ -153,7 +150,7 @@ if (typeof Object.create !== "function") {
         self.resize(self);
       });
 
-      loadAPI(self.onYouTubeIframeAPIReady.bind(self));
+      loadAPI(self.onYouTubeIframeAPIReady.on(self));
 
       self.resize(self);
 
