@@ -151,6 +151,74 @@ Author: SlyThemes
     color: #4682B4;
   }
 }
+@media (max-width: 767px){
+  .services {
+    padding-bottom: 0;
+  }
+  .services .tab-box-item li {
+    display: inline-block;
+    padding: 1px 30px 5px;
+    margin-bottom: 45px;
+    cursor: pointer;
+    color: #888;
+    position: relative;
+    transition: all 1s;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .services .tab-box-item li:before {
+    content: "";
+    width: 1px;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    right: 0;
+  }
+  .services .tab-box-item li:last-child:before {
+    display: none;
+  }
+  .services .tab-box-item li span {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .services .tab-box-item li h6 {
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .services .tab-box-item .active {
+    color: #4682B4;
+  }
+  .services .tab-box-item .active:after {
+    display: block;
+  }
+  .services .services_content {
+    min-height: 350px;
+    padding-top: 80px;
+    padding-bottom: 57px;
+    background: #B8B8B8;
+  }
+  .services .services_content .item {
+    display: none;
+  }
+  .services .services_content .item .symbol {
+    font-size: 180px;
+    color: #f4f4f4;
+  }
+  .services .services_content .item h5 {
+    color: #4682B4;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+  .services .services_content .active {
+    display: block;
+  }
+  .icon-color{
+    color: #4682B4;
+  }
+}
 @media (min-width: 1280px){
   .social-icon-sub{
     width: 50px;
