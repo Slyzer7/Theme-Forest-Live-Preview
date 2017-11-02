@@ -42,13 +42,19 @@ Author: SlyThemes
     width: 90%;
   }
 }
-@media (max-width: 767px){
+@media (max-width: 1280px){
   .p-section{
-    padding-bottom: 35px;
+    padding-bottom: 10px;
     text-align: center;
   }
+  .p-section-2{
+    padding-top: 0px;
+    padding-bottom: 40px;
+    text-align: center;
+    
+  }
 }
-@media (max-width: 767px){
+@media (max-width: 1280px){
   .section_head{
     text-align: center;
   }
@@ -77,23 +83,20 @@ Author: SlyThemes
     margin-left: 70px;
   }
 }
-@media (max-width: 767px){
+@media (max-width: 1280px){
+  .services {
+    padding-bottom: 0;
+  }
   .services .tab-box-item li {
     display: inline-block;
-    padding: 15px 30px 5px;
+    padding: 1px 55px 5px;
     margin-bottom: 45px;
-    border: 1.8px solid rgba(77, 70, 70, 0.4);
-    border-radius: 20px;
     cursor: pointer;
     color: #888;
     position: relative;
-    background-color: #f1f1f1;
-    transition: all 2s;
-  }
-  .services .tab-box-item li:hover{
-    -webkit-transform: scale(0.85);
-            transform: scale(0.85);
-    transition: all 2s;
+    transition: all 1s;
+    margin-left: 4px;
+    margin-right: 4px;
   }
   .services .tab-box-item li:before {
     content: "";
@@ -106,22 +109,12 @@ Author: SlyThemes
   .services .tab-box-item li:last-child:before {
     display: none;
   }
-  .services .tab-box-item li:after {
-    content: "";
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid #4682B4;
-    position: absolute;
-    bottom: -50px;
-    left: calc(50% - 20px);
-    display: none;
-  }
   .services .tab-box-item li span {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 20px;
   }
   .services .tab-box-item li h6 {
-    font-size: 12px;
+    font-size: 13px;
     text-transform: uppercase;
   }
   .services .tab-box-item .active {
@@ -129,6 +122,33 @@ Author: SlyThemes
   }
   .services .tab-box-item .active:after {
     display: block;
+  }
+  .services .services_content {
+    min-height: 350px;
+    padding-top: 80px;
+    padding-bottom: 57px;
+    background: #B8B8B8;
+  }
+  .services .services_content .item {
+    display: none;
+  }
+  .services .services_content .item .symbol {
+    font-size: 180px;
+    color: #f4f4f4;
+  }
+  .services .services_content .item h5 {
+    color: #4682B4;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+  .services .services_content .active {
+    display: block;
+  }
+  .icon-color{
+    color: #4682B4;
   }
 }
 @media (min-width: 1280px){
@@ -293,7 +313,10 @@ Author: SlyThemes
   {
     margin-bottom: 50px;
   }
-
+  .section_divider{
+    padding-top: 40px;
+    padding-bottom: 12px;
+  }
   .Works .filtering span{
     padding: 0 10px 0;
   }
@@ -325,7 +348,11 @@ Author: SlyThemes
   }
 
   .services_content .Our-Service-info{
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .Service-Padding{
+    margin-left: 0px;
   }
 }
 

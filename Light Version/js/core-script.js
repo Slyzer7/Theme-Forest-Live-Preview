@@ -20,19 +20,18 @@ Index Of JS:
     :: 13. Animation-Code
         
 */
-
 "use strict";
 /*jslint browser:true */
 
 /* >>>>>>>>> Page-Loader >>>>>>>>>>*/
-$(window).on("load",function (){
+$(window).on("load", function() {
 
     $(".page-loader").fadeOut(500);
 
     /* >>>>>>>>> Contact-Form >>>>>>>>>>*/
     $('#contact-form').validator();
 
-    $('#contact-form').on('submit', function (e) {
+    $('#contact-form').on('submit', function(e) {
         if (!e.isDefaultPrevented()) {
             var url = "contact.php";
 
@@ -40,8 +39,7 @@ $(window).on("load",function (){
                 type: "POST",
                 url: url,
                 data: $(this).serialize(),
-                success: function (data)
-                {
+                success: function(data) {
                     var messageAlert = 'alert-' + data.type;
                     var messageText = data.message;
 
@@ -58,77 +56,78 @@ $(window).on("load",function (){
 
     /* >>>>>>>>> Isotope >>>>>>>>>>*/
     $('.gallery').isotope({
-      itemSelector: '.item-img'
+        itemSelector: '.item-img'
     });
 
-    var $gallery = $('.gallery').isotope({
-    });
+    var $gallery = $('.gallery').isotope({});
 
- /* >>>>>>>>> Filter >>>>>>>>>>*/
-    $('.filtering').on( 'click', 'span', function() {
+    /* >>>>>>>>> Filter >>>>>>>>>>*/
+    $('.filtering').on('click', 'span', function() {
         var filterValue = $(this).attr('data-filter');
-        $gallery.isotope({ filter: filterValue });
+        $gallery.isotope({
+            filter: filterValue
+        });
     });
 
-    $('.filtering').on( 'click', 'span', function() {
+    $('.filtering').on('click', 'span', function() {
         $(this).addClass('active').siblings().removeClass('active');
     });
 
 });
 
 
-$(function (){
+$(function() {
     "use strict";
 
     var wind = $(window);
 
     /* >>>>>>>>> Smooth-Page-Scroll >>>>>>>>>>*/
     $('.navbar-nav').singlePageNav({
-        speed:1000,
-        currentClass:'active',
-        offset:60
+        speed: 1000,
+        currentClass: 'active',
+        offset: 60
     });
 
     /* >>>>>>>>> Nav scrolling >>>>>>>>>>*/
-    wind.on("scroll",function () {
+    wind.on("scroll", function() {
 
         var bodyScroll = wind.scrollTop(),
             navbar = $(".navbar-default");
 
-        if(bodyScroll > 300){
+        if (bodyScroll > 300) {
 
             navbar.addClass("nav-scroll");
 
-        }else{
+        } else {
 
             navbar.removeClass("nav-scroll");
         }
     });
 
     /* >>>>>>>>> Smooth Button-Scroll >>>>>>>>>>*/
-    $('.button-scroll').on('click', function(){
-      
+    $('.button-scroll').on('click', function() {
+
         var scrollTo = $(this).attr('data-scrollTo');
 
         $('body, html').animate({
 
-        "scrollTop": $('#'+scrollTo).offset().top - 60
-        }, 1000 );
+            "scrollTop": $('#' + scrollTo).offset().top - 60
+        }, 1000);
 
-    }); 
+    });
 
 
     /* >>>>>>>>> Progress-Bar >>>>>>>>>>*/
-    wind.on('scroll', function () {
-        $(".skill_progression span").each(function () {
-            var bottom_of_object = 
-            $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = 
-            $(window).scrollTop() + $(window).height();
+    wind.on('scroll', function() {
+        $(".skill_progression span").each(function() {
+            var bottom_of_object =
+                $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window =
+                $(window).scrollTop() + $(window).height();
             var myVal = $(this).attr('data-value');
-            if(bottom_of_window > bottom_of_object) {
+            if (bottom_of_window > bottom_of_object) {
                 $(this).css({
-                  width : myVal
+                    width: myVal
                 });
             }
         });
@@ -136,7 +135,7 @@ $(function (){
 
 
     /* >>>>>>>>> Tabs >>>>>>>>>>*/
-    $(".services").on("click", "li", function(){
+    $(".services").on("click", "li", function() {
 
         var myID = $(this).attr("id");
 
@@ -151,30 +150,31 @@ $(function (){
 
     /* >>>>>>>>> Magnific-Popup JS >>>>>>>>>>*/
     $('.portfolio .link').magnificPopup({
-      delegate: 'a',
-      type: 'image'
+        delegate: 'a',
+        type: 'image'
     });
 
 
     /* >>>>>>>>> Owl-Carousel JS >>>>>>>>>>*/
     $('.demo4 .owl-carousel').owlCarousel({
-        items:1,
-        loop:true,
-        mouseDrag:false,
-        autoplay:true,
-        dots:false,
-        nav:true,
-        navText:['<span> <i class="fa fa-angle-left" aria-hidden="true"></i> </span>',
-        '<span> <i class="fa fa-angle-right" aria-hidden="true"></i> </span>'],
-        smartSpeed:500
+        items: 1,
+        loop: true,
+        mouseDrag: false,
+        autoplay: true,
+        dots: false,
+        nav: true,
+        navText: ['<span> <i class="fa fa-angle-left" aria-hidden="true"></i> </span>',
+            '<span> <i class="fa fa-angle-right" aria-hidden="true"></i> </span>'
+        ],
+        smartSpeed: 500
     });
 
     $('.Reviews .owl-carousel').owlCarousel({
-        items:1,
-        loop:true,
-        mouseDrag:false,
-        autoplay:true,
-        smartSpeed:500
+        items: 1,
+        loop: true,
+        mouseDrag: false,
+        autoplay: true,
+        smartSpeed: 500
     });
 
     /* >>>>>>>>> Stellar >>>>>>>>>>*/
@@ -182,23 +182,25 @@ $(function (){
 
 
     /* >>>>>>>>> Map >>>>>>>>>>*/
-    $(".map-toggle").click(function (){
+    $(".map-toggle").on('click', function() {
         $(".map-loc").slideToggle(10);
         $("span").toggleClass("open");
     });
 
-     /* >>>>>>>>> Animation-Code >>>>>>>>>>*/
-    $(window).scroll( function(){
-        $('.hide-me').each( function(i){   
+    /* >>>>>>>>> Animation-Code >>>>>>>>>>*/
+    $(window).on('scroll', function() {
+        $('.hide-me').each(function(i) {
             var bottom_of_object = $(this).position().top;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            if( bottom_of_window > bottom_of_object ){
-                $(this).animate({'opacity':'1'},780);    
+
+            if (bottom_of_window > bottom_of_object) {
+                $(this).animate({
+                    'opacity': '1'
+                }, 780);
             }
-            
-        }); 
-    
+
+        });
+
     });
 
 });
