@@ -415,12 +415,15 @@ Author: SlyThemes
     margin-top: 50px;
   }
 
+  .Service-Padding{
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 991px){
   .services_content .Our-Service-info{
     margin-top: 30px;
     margin-bottom: 0px;
-  }
-  .Service-Padding{
-    margin-left: 0px;
   }
 }
 @media (max-width: 767px){
