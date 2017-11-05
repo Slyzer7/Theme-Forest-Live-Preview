@@ -575,6 +575,9 @@ h6{
   border: 2px solid #383838;
   border-radius: 25px;
 }
+.img-style3{
+  border-radius: 15px;
+}
 .symbol-footer-pd{
   padding-top: 15px;
 }
@@ -593,6 +596,7 @@ h6{
 }
 .about .item {
   margin-bottom:50px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
 }
 .section-progress {
   padding-top: 10px;
@@ -638,7 +642,6 @@ h6{
   text-align: center;
 }
 .Base_Attributes .item {
-  border: 2px solid #363636;
   padding: 50px 30px;
   background: #262626;
   border-radius: 15px;
@@ -1179,7 +1182,7 @@ h6{
 .News .post-content {
   padding: 30px 20px 15px;
   background: #333;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 .News .post-content h6 {
   margin-bottom: 15px;
